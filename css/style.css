@@ -1,0 +1,90 @@
+@import '../fonts/vazir-font/fonts.css';
+
+body {
+    direction: rtl;
+    background: #00c6ff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+a,
+span,
+ul,
+li,
+input,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Vazir' !important;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/material-icon.woff2') format('woff2');
+}
+
+input[type='text']:focus {
+    border-bottom: 1px solid #7e57c2 !important;
+    -webkit-box-shadow: 0 1px 0 0 #7e57c2 !important;
+    box-shadow: 0 1px 0 0 #7e57c2 !important;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.add_btn {
+    background-color: #7e57c2;
+}
+
+.add_btn:hover {
+    background-color: #673ab7;
+}
+
+.add_btn:active,
+.add_btn:focus {
+    background-color: #673ab7;
+
+}
+
+.delete_btn {
+    background-color: #263238;
+}
+
+.delete_btn:hover {
+    background-color: #ff0000;
+}
+
+.delete_btn_color {
+    color: #263238;
+}
+
+.delete_btn_color:hover {
+    color: #ff0000;
+}
+
+.collection {
+    padding: 0;
+}
