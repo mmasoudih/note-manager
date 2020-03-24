@@ -43,7 +43,7 @@ function removeNote(e) {
 }
 
 function removeAllNote() {
-    if(confirm('با این کار همه یادداشت هات پاک میشه! \n مطمئنی ؟؟')){
+    if (confirm('با این کار همه یادداشت هات پاک میشه! \n مطمئنی ؟؟')) {
         while (list.firstChild) {
             list.removeChild(list.firstChild);
         }
@@ -51,6 +51,7 @@ function removeAllNote() {
         inputAddNote.focus();
     }
 }
+
 function filterNote() {
     let text = inputSerachNote.value;
     document.querySelectorAll('.collection-item').forEach((task) => {
