@@ -28,6 +28,7 @@ function addNote(e) {
         list.append(li);
         storeInLocalStorage(inputAddNote.value);
         inputAddNote.value = '';
+        inputAddNote.focus();
     }
 }
 
@@ -47,9 +48,9 @@ function removeAllNote() {
             list.removeChild(list.firstChild);
         }
         clearLocalStorage();
+        inputAddNote.focus();
     }
 }
-
 function filterNote() {
     let text = inputSerachNote.value;
     document.querySelectorAll('.collection-item').forEach((task) => {
