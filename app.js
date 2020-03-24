@@ -42,10 +42,12 @@ function removeNote(e) {
 }
 
 function removeAllNote() {
-    while (list.firstChild) {
-        list.removeChild(list.firstChild);
+    if(confirm('با این کار همه یادداشت هات پاک میشه! \n مطمئنی ؟؟')){
+        while (list.firstChild) {
+            list.removeChild(list.firstChild);
+        }
+        clearLocalStorage();
     }
-    clearLocalStorage();
 }
 
 function filterNote() {
